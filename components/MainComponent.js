@@ -283,7 +283,7 @@ class Main extends Component {
         this.props.fetchCampsites();
         this.props.fetchComments();
         this.props.fetchPartners();
-        this.props.fetchPartners();
+        this.props.fetchPromotions();
     }
 
     render() {
