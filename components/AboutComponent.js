@@ -34,7 +34,7 @@ class About extends Component {
         if (this.props.partners.isLoading) {
             return (
                 <ScrollView>
-                    <Misson />
+                    <Mission />
                     <Card wrapperStyle={{margin: 20}} title='COMMUNITY PARTNERS'>
                         <Loading />
                     </Card>
@@ -45,7 +45,7 @@ class About extends Component {
             return (
                 <ScrollView>
                     <Animatable.View animation='fadeInDown' duration={2000} delay={1000}>
-                        <Misson />
+                        <Mission />
                         <Card
                             title="Community Partners">
                                 <Text>{this.props.partners.errMess}</Text>
@@ -57,7 +57,7 @@ class About extends Component {
         return (
             <ScrollView>
                 <Animatable.View animation='fadeInDown' duration={2000} delay={1000}>
-                    <Misson />
+                    <Mission />
                     <Card wrapperStyle={{margin: 20}} title='COMMUNITY PARTNERS'>
                         <FlatList
                         data={this.props.partners.partners}
@@ -73,7 +73,7 @@ class About extends Component {
     }
 }
 
-function Misson() {
+function Mission() {
     return (
         <Card wrapperStyle={{margin: 20}} title='MISSION'>
             <Text style={{margin:10}}>

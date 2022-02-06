@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
-import { FlatList } from 'react-native';
-import { ListItem } from 'react-native-elements';
-import { View, Text, ScrollView } from 'react-native';
-import { CAMPSITES } from '../shared/campsites';
+import { Text, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements';
 import * as Animatable from 'react-native-animatable';
 
 class Contact extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            campsites: CAMPSITES
-        };
-    }
 
     static navigationOptions = {
         title: 'Contact'
